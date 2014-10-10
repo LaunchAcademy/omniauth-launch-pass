@@ -14,6 +14,8 @@ module OmniAuth
       info do
         {
           email: raw_info["email"],
+          first_name: raw_info["first_name"],
+          last_name: raw_info["last_name"],
           name: [raw_info["first_name"], raw_info["last_name"]].join(' ')
         }
       end
