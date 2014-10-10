@@ -9,7 +9,7 @@ module OmniAuth
         site_url: "http://icode.launchacademy.com",
         authorize_url: "/oauth/authorize"
       }
-      uid { raw_info["id"] }
+      uid { raw_info["id"].to_s }
 
       info do
         {
