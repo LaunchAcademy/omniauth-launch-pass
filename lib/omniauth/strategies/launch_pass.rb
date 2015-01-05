@@ -2,11 +2,11 @@ require 'omniauth/strategies/oauth2'
 
 module OmniAuth
   module Strategies
-    class ICode < OmniAuth::Strategies::OAuth2
-      option :name, :icode
+    class LaunchPass < OmniAuth::Strategies::OAuth2
+      option :name, :launch_pass
 
       option :client_options, {
-        site_url: "http://icode.launchacademy.com",
+        site_url: "https://launchpass.launchacademy.com/",
         authorize_url: "/oauth/authorize"
       }
       uid { raw_info["id"].to_s }
@@ -27,4 +27,4 @@ module OmniAuth
   end
 end
 
-OmniAuth.config.add_camelization 'icode', 'ICode'
+OmniAuth.config.add_camelization 'launch_pass', 'LaunchPass'

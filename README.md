@@ -1,4 +1,4 @@
-# Omniauth::Icode
+# Omniauth::LaunchPass
 
 TODO: Write a gem description
 
@@ -7,7 +7,7 @@ TODO: Write a gem description
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'omniauth-icode'
+gem 'omniauth-launch-pass'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-icode
+    $ gem install omniauth-launch-pass
 
 ## Usage
 
@@ -24,7 +24,7 @@ TODO: Write usage instructions here
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/omniauth-icode/fork )
+1. Fork it ( https://github.com/[my-github-username]/omniauth-launch-pass/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

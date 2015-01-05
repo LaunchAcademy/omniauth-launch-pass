@@ -1,14 +1,18 @@
 # coding: utf-8
 $:.push File.expand_path('../lib', __FILE__)
-require 'omniauth/icode/version'
+require 'omniauth/launch_pass/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "omniauth-icode"
-  spec.version       = Omniauth::Icode::VERSION
-  spec.authors       = ["Sam McTaggart"]
-  spec.email         = ["sam.mctaggart@launchacademy.com"]
-  spec.summary       = %q{Omniauth strategy for iCode}
-  spec.description   = %q{the best description in the world}
+  spec.name          = "omniauth-launch-pass"
+  spec.version       = Omniauth::LaunchPass::VERSION
+  spec.authors       = ["Sam McTaggart", "Dan Pickett"]
+  spec.email         = [
+    "sam.mctaggart@launchacademy.com",
+    "dan.pickett@launchacademy.com"
+  ]
+
+  spec.summary       = %q{Omniauth strategy for Launch Pass}
+  spec.description   = %q{Launch Academy's single sign on client}
   spec.homepage      = ""
   spec.license       = "MIT"
 
