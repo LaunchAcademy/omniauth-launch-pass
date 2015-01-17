@@ -3,7 +3,7 @@ require 'omniauth/strategies/oauth2'
 module OmniAuth
   module Strategies
     class LaunchPass < OmniAuth::Strategies::OAuth2
-      option :name, :launch_pass
+      option :name, 'launch_pass'
 
       option :client_options, {
         site: "https://launchpass.launchacademy.com",
