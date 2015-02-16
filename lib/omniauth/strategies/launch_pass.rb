@@ -13,13 +13,7 @@ module OmniAuth
       uid { raw_info["id"].to_s }
 
       info do
-        {
-          email: raw_info["email"],
-          first_name: raw_info["first_name"],
-          last_name: raw_info["last_name"],
-          teams: raw_info["teams"],
-          product_offerings: raw_info["product_offerings"]
-        }
+        raw_info["user"]
       end
 
       def raw_info
