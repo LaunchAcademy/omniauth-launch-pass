@@ -39,8 +39,6 @@ module LaunchPass
         @teams ||= @info_hash["teams"].map do |team_hash|
           team_hash["name"]
         end
-      else
-        []
       end
     end
 
@@ -49,8 +47,6 @@ module LaunchPass
         @products ||= @info_hash["products"].map do |product|
           product["name"]
         end
-      else
-        []
       end
     end
   end
