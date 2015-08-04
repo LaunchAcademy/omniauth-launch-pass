@@ -10,10 +10,18 @@ module OmniAuth
         authorize_url: "/oauth/authorize"
       }
 
+      option :authorize_params, {
+        signing_up: nil
+      }
+
       uid { raw_info["user"]["id"].to_s }
 
       info do
         raw_info["user"]
+      end
+
+      def setup_phase
+        request.env['omniauth.strategy'].options[:authorize_params][:signing_up] =  request.params["signing_up"]
       end
 
       def raw_info
