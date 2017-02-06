@@ -20,6 +20,10 @@ module OmniAuth
         raw_info["user"]
       end
 
+      def callback_url
+        full_host + script_name + callback_path
+      end
+
       def setup_phase
         request.env['omniauth.strategy'].options[:authorize_params][:signing_up] =  request.params["signing_up"]
       end
