@@ -7,11 +7,12 @@ module OmniAuth
 
       option :client_options, {
         site: "https://launchpass.launchacademy.com",
-        authorize_url: "/oauth/authorize"
+        authorize_url: "/oauth/authorize",
       }
 
       option :authorize_params, {
-        signing_up: nil
+        signing_up: nil,
+        scope: "public"
       }
 
       uid { raw_info["user"]["id"].to_s }
