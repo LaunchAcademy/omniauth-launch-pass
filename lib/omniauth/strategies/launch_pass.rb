@@ -15,10 +15,10 @@ module OmniAuth
         scope: "public"
       }
 
-      uid { raw_info["user"]["id"].to_s }
+      uid { raw_info["id"].to_s }
 
       info do
-        raw_info["user"]
+        raw_info
       end
 
       def callback_url
